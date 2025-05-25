@@ -1,0 +1,18 @@
+@use "../../../styles/index" as *;
+
+.profile-layout {
+  display: flex;
+  width: 100%;
+}
+
+.profile-aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4%;
+  background-color: #fbfbfb;
+
+  & svg {
+    cursor: pointer;
+  }
+}

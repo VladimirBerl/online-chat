@@ -1,0 +1,39 @@
+@use "./variables" as *;
+@use "./reset";
+@use "./mixins";
+@forward "./reset";
+@forward "./variables";
+@forward "./mixins";
+
+body {
+  font-family: Inter, sans-serif;
+  color: $text-color;
+  font-size: $text-size-lg;
+  font-weight: 500;
+  background-color: $background-color;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.center {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  width: 100%;
+  color: $text-color-white;
+  padding: 0.75rem 0;
+  background-color: $primary-color;
+  border-radius: $border-radius-xs;
+  transition: all $transition-time ease-in-out;
+
+  &:hover {
+    background-color: $primary-color-hover;
+  }
+}
