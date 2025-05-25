@@ -1,0 +1,14 @@
+<div class="center">
+  <section class="auth">
+    <p class="auth-title">{{context.title}}</p>
+    <form class="auth-form" id="auth-form">
+      {{#each fields}}
+        {{> Input label=label type=type name=name id=id placeholder=placeholder required=true }}
+      {{/each}}
+      <div class="auth-form-buttons">
+        {{> Button class="primary" type="submit" text=context.firstButton }}
+        <a href="{{context.secondButtonHref}}">{{context.secondButton}}</a>
+      </div>
+    </form>
+  </section>
+</div>
