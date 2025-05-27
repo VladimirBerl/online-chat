@@ -3,6 +3,6 @@ import "./_layout.scss";
 import "./_profile.scss";
 import source from "bundle-text:./template.hbs";
 
-import { userData } from "../../../const/data";
+import { userData } from "../../../const/data.js";
 
 export default renderTemplateHbs(source, userData);

@@ -1,6 +1,9 @@
 import { compile } from "handlebars";
 
-export default function renderTemplateHbs(course, context) {
+export default function renderTemplateHbs(
+  course: string,
+  context: Record<string, unknown> = {},
+): () => HTMLDivElement {
   return function () {
     const html = compile(course)(context);
     const div = document.createElement("div");

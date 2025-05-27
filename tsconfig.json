@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    // Указывает, на какой уровень JavaScript TypeScript будет компилировать код.
+    "target": "ESNext",
+    // Указывает, какой формат модулей использовать (CommonJS, ESNext, ES6, и т.д.).
+    "module": "ESNext",
+    // Говорит TypeScript, как искать модули.
+    "moduleResolution": "Node",
+    // Определяет глобальные типы, доступные в проекте:
+    "lib": ["DOM", "ESNext"],
+    // Включает все строгие проверки TypeScript:
+    "strict": true,
+    // Позволяет писать: import fs from "fs" вместо import * as fs from "fs"
+    "esModuleInterop": true,
+    // Пропускает проверку типов внутри зависимостей (node_modules).
+    "skipLibCheck": true,
+    // Гарантирует, что регистр в путях к файлам будет всегда одинаковым.
+    "forceConsistentCasingInFileNames": true,
+    // TypeScript не будет генерировать .js файлы, он только проверяет типы.
+    "noEmit": true,
+    // Запрещает обрабатывать .js файлы.
+    "allowJs": false,
+    // Если бы allowJs: true, то checkJs: true включил бы проверку типов и в .js файлах (через JSDoc).
+    //Но у тебя allowJs: false, так что эта опция не используется.
+    "checkJs": false
+  },
+  // Указывает, какие файлы и директории включать в компиляцию и проверку.
+  "include": ["src/**/*"],
+  // Указывает, какие файлы и директории не включать в компиляцию и проверку.
+  "exclude": ["node_modules", "dist"]
+}

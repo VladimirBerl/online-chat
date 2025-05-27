@@ -7,7 +7,7 @@ import {
   renderProfileEditPassword,
 } from "../../page/profile";
 
-const routes = {
+const routes: Record<string, () => HTMLDivElement> = {
   "/profile/edit/password": renderProfileEditPassword,
   "/profile/edit": renderProfileEditInfo,
   "/profile": renderProfile,
@@ -16,13 +16,14 @@ const routes = {
   "/": renderHome,
 };
 
-export function initRouter() {
+export function initRouter(): void {
   window.addEventListener("hashchange", renderRoute);
   renderRoute();
 }
 
-function renderRoute() {
+function renderRoute(): void {
   const root = document.querySelector("#root");
+  if (root === null) return;
   root.innerHTML = "";
 
   const path = window.location.hash.replace("#", "") || "/";

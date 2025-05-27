@@ -3,7 +3,7 @@ import renderTemplateHbs from "../../../libs/renderTemplateHbs.js";
 import "./_profile-edit-info.scss";
 import source from "bundle-text:./template-edit-password.hbs";
 
-import { userData } from "../../../const/data";
+import { userData } from "../../../const/data.js";
 
 const ctx = {
   fields: [
