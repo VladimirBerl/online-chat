@@ -1,7 +1,3 @@
-<button
-  class="button {{class}}"
-  type="{{type}}"
-  id="{{id}}"
->
-  {{text}}
+<button type="{{type}}" class="button {{#if mod}}button_type_{{mod}}{{/if}} {{#if size}}button_size_{{size}}{{/if}}">
+    {{{text}}}
 </button>
