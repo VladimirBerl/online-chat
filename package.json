@@ -7,7 +7,6 @@
     "dev": "parcel --no-cache --port 3000 --open",
     "build": "parcel build --no-cache",
     "start": "node ./server.js",
-    
     "lint:css": "stylelint \"src/**/*.scss\"",
     "lint:js": "eslint \"src/**/*.js\"",
     "lint:prettier": "prettier . --check",
@@ -23,8 +22,8 @@
     "assert": "^2.1.0",
     "eslint": "^9.27.0",
     "parcel": "^2.15.1",
-    "parcel-transformer-hbs": "^1.0.4",
     "parcel-reporter-static-files-copy": "^1.5.0",
+    "parcel-transformer-hbs": "^1.0.4",
     "prettier": "3.5.3",
     "process": "^0.11.10",
     "stylelint": "^16.19.1",
@@ -32,6 +31,7 @@
   },
   "dependencies": {
     "express": "^5.1.0",
-    "handlebars": "^4.7.8"
+    "handlebars": "^4.7.8",
+    "uuid": "^11.1.0"
   }
 }
